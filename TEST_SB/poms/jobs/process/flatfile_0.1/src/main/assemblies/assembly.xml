@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?><assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>bin</id>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <files>
+        <file>
+            <!-- jobInfo.properties -->
+            <source>${basedir}/src/main/templates/jobInfo_template.properties
+			</source>
+            <outputDirectory>.</outputDirectory>
+            <destName>jobInfo.properties</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- sh -->
+            <source>${basedir}/src/main/templates/Job_run_template.sh</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.sh</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- bat -->
+            <source>${basedir}/src/main/templates/Job_run_template.bat</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.bat</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- ps1 -->
+            <source>${basedir}/src/main/templates/Job_run_template.ps1</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.ps1</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>dom4j-2.1.3.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendCBP\1.1.4\talendCBP-1.1.4.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendCBP-1.1.4.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\components\talend_file_enhanced\1.3.1\talend_file_enhanced-1.3.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talend_file_enhanced-1.3.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendboot\1.0.8\talendboot-1.0.8.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendboot-1.0.8.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendagent\1.0.2\talendagent-1.0.2.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendagent-1.0.2.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\jboss\marshalling\jboss-marshalling\2.0.12.Final\jboss-marshalling-2.0.12.Final.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>jboss-marshalling-2.0.12.Final.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.17.1\log4j-slf4j-impl-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-slf4j-impl-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\slf4j\slf4j-api\1.7.34\slf4j-api-1.7.34.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>slf4j-api-1.7.34.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\daikon\crypto-utils\7.1.20\crypto-utils-7.1.20.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>crypto-utils-7.1.20.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-core-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-api-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\javassist\javassist\3.30.2-GA\javassist-3.30.2-GA.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>javassist-3.30.2-GA.jar</destName>
+        </file>
+    </files>
+    <fileSets>
+        <fileSet>
+            <!-- templates -->
+            <directory>${templates.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/templates/
+			</outputDirectory>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- log4j resources -->
+            <directory>${log4j.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/
+			</outputDirectory>
+            <includes>
+                <include>log4j.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- log4j.xml for running -->
+            <directory>${log4j.running.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>log4j.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- xmlMappings resources -->
+            <directory>${xmlMappings.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/xmlMappings/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- xmlMappings for running -->
+            <directory>${xmlMappings.running.dir}</directory>
+            <outputDirectory>${talend.job.name}/xmlMappings/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- rules resources -->
+            <directory>${rules.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/rules/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- assembly_*.xml -->
+            <directory>${assemblies.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/assemblies/
+			</outputDirectory>
+            <includes>
+                <include>assembly.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- pom_*.xml -->
+            <directory>${poms.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--parent pom.xml -->
+            <directory>${parentpom.dir}</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--routines code -->
+            <directory>${routinescode.dir}</directory>
+            <outputDirectory>code/routines/src/main</outputDirectory>
+            <includes>
+                <include>**/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--routines pom -->
+            <directory>${routinespom.dir}</directory>
+            <outputDirectory>code/routines/</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--pigudf code -->
+            <directory>${pigudfcode.dir}</directory>
+            <outputDirectory>code/pigudf/src/main</outputDirectory>
+            <includes>
+                <include>**/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--pifudf pom -->
+            <directory>${pigudfpom.dir}</directory>
+            <outputDirectory>code/pigudf/</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--joblet -->
+            <directory>${joblet.dir}</directory>
+            <outputDirectory>jobs/</outputDirectory>
+            <includes>
+                <include>joblets*/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add items -->
+            <directory>${items.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <useDefaultExcludes>false</useDefaultExcludes>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add java source codes -->
+            <directory>${sourcecodes.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/java/</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add context resources -->
+            <directory>${resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/
+			</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add test source codes -->
+            <directory>${test.sourcecodes.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/test/java/</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add test context resources -->
+            <directory>${test.resources.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/test/resources/
+			</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- junits reports -->
+            <directory>${test.reports.dir}</directory>
+            <outputDirectory>sunfire-reports</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add all resources for running -->
+            <directory>${contexts.running.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <!-- If have children jobs, will add here -->
+        <fileSet>
+            <!-- microservice config files -->
+            <directory>${microservice.configs.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>config/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- microservice running config files -->
+            <directory>${microservice.running.configs.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>config/**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>org.example.test_sb.code:routines:jar:8.0.1</include>
+                <include>org.talend.libraries:talend-codegen-utils:jar:0.35.0</include>
+                <include>org.talend:system-routines:jar:8.0.1</include>
+            </includes>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>org.talend.components.lib:talend-sql-injection-utils:jar:1.0</include>
+                <include>org.talend.components.lib:job-audit:jar:1.5</include>
+                <include>com.google.auto.service:auto-service:jar:1.0-rc2</include>
+                <include>org.apache.httpcomponents:httpcore:jar:4.4.13</include>
+                <include>com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava</include>
+                <include>com.google.errorprone:error_prone_annotations:jar:2.3.4</include>
+                <include>org.apache.maven.resolver:maven-resolver-impl:jar:1.8.2</include>
+                <include>org.codehaus.jackson:jackson-mapper-asl:jar:1.9.16-TALEND</include>
+                <include>net.minidev:json-smart:jar:2.4.11</include>
+                <include>commons-collections:commons-collections:jar:3.2.2</include>
+                <include>javax.activation:javax.activation-api:jar:1.2.0</include>
+                <include>org.apache.commons:commons-lang3:jar:3.10</include>
+                <include>org.talend.components:components-common:jar:0.37.38</include>
+                <include>org.apache.commons:commons-configuration2:jar:2.10.1</include>
+                <include>com.google.j2objc:j2objc-annotations:jar:1.3</include>
+                <include>javax.inject:javax.inject:jar:1</include>
+                <include>org.talend.daikon:daikon-exception:jar:7.1.20</include>
+                <include>org.talend.daikon:logging-event-layout:jar:1.16.1</include>
+                <include>org.ow2.asm:asm:jar:9.5</include>
+                <include>javax.servlet:javax.servlet-api:jar:3.1.0</include>
+                <include>com.google.auto:auto-common:jar:0.3</include>
+                <include>org.apache.httpcomponents:httpclient:jar:4.5.13</include>
+                <include>org.checkerframework:checker-qual:jar:3.5.0</include>
+                <include>net.snowflake:snowflake-jdbc:jar:3.13.30</include>
+                <include>org.talend.daikon:daikon:jar:7.1.20</include>
+                <include>org.apache.maven.resolver:maven-resolver-spi:jar:1.8.2</include>
+                <include>org.talend.components:components-snowflake-runtime:jar:0.37.38</include>
+                <include>org.talend.components:components-api:jar:0.37.38</include>
+                <include>com.google.guava:failureaccess:jar:1.0.1</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations:jar:2.16.0</include>
+                <include>com.fasterxml.jackson.core:jackson-core:jar:2.16.0</include>
+                <include>commons-beanutils:commons-beanutils:jar:1.9.4</include>
+                <include>commons-codec:commons-codec:jar:1.14</include>
+                <include>commons-logging:commons-logging:jar:1.2</include>
+                <include>org.apache.maven.resolver:maven-resolver-util:jar:1.8.2</include>
+                <include>org.talend.components:components-snowflake-definition:jar:0.37.38</include>
+                <include>com.fasterxml.jackson.core:jackson-databind:jar:2.16.0</include>
+                <include>com.google.code.findbugs:jsr305:jar:1.3.9</include>
+                <include>com.google.guava:guava:jar:32.1.2-jre</include>
+                <include>org.osgi:org.osgi.service.component.annotations:jar:1.3.0</include>
+                <include>org.talend.daikon:audit-log4j2:jar:1.16.1</include>
+                <include>commons-io:commons-io:jar:2.15.1</include>
+                <include>javax.annotation:javax.annotation-api:jar:1.3</include>
+                <include>org.projectlombok:lombok:jar:1.18.24</include>
+                <include>org.talend.components:talendcsv:jar:1.1.0</include>
+                <include>org.apache.maven.resolver:maven-resolver-named-locks:jar:1.8.2</include>
+                <include>org.ops4j.pax.url:pax-url-aether:jar:2.6.12</include>
+                <include>org.apache.avro:avro:jar:1.11.3</include>
+                <include>org.ops4j.pax.url:pax-url-aether-support:jar:2.6.12</include>
+                <include>com.sun.istack:istack-commons-runtime:jar:3.0.7</include>
+                <include>com.cedarsoftware:json-io:jar:4.14.0-TALENDv2</include>
+                <include>org.apache.maven.resolver:maven-resolver-api:jar:1.8.2</include>
+                <include>org.apache.commons:commons-text:jar:1.10.0</include>
+                <include>org.codehaus.jackson:jackson-core-asl:jar:1.9.16-TALEND</include>
+                <include>org.jvnet.staxex:stax-ex:jar:1.8</include>
+                <include>net.minidev:accessors-smart:jar:2.4.11</include>
+                <include>javax.xml.bind:jaxb-api:jar:2.3.1</include>
+                <include>com.sun.xml.fastinfoset:FastInfoset:jar:1.2.15</include>
+                <include>joda-time:joda-time:jar:2.8.2</include>
+                <include>org.apache.commons:commons-compress:jar:1.26.0</include>
+                <include>org.glassfish.jaxb:jaxb-runtime:jar:2.3.1</include>
+                <include>org.glassfish.jaxb:txw2:jar:2.3.1</include>
+                <include>org.talend.daikon:audit-common:jar:1.16.1</include>
+            </includes>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>org.example.test_sb.job:Flatfile:jar:0.1.0</include>
+            </includes>
+            <outputFileNameMapping>${artifact.build.finalName}.${artifact.extension}</outputFileNameMapping>
+            <useProjectArtifact>true</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+</assembly>
