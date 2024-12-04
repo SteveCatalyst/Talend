@@ -1,0 +1,3 @@
+allow.java.internal.access=true
+custom.access.settings=\n\# Setup Java internal modules for your custom components,\n\# Settings will be applied to Jobs which use these components.\n\#tSnowflakeConnection\=java.base/java.nio\n\n\# Setup global Java internal modules,\n\# Settings will be applied to all Jobs.\n\#GLOBAL\=java.base/java.lang,java.base/java.io\n
+eclipse.preferences.version=1
