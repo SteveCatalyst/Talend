@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
   <TalendMetadata:DelimitedFileConnection xmi:id="_j4wYALLmEe-hyfK815nuZA" name="Contacts" dataPackage="_j4wYAbLmEe-hyfK815nuZA" Server="Localhost 127.0.0.1" FilePath="C:/Users/SteveBates/OneDrive - CATALYST IT SOLUTIONS LTD/Documents/TalendTraining/Dev/Contacts.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_j4wYAbLmEe-hyfK815nuZA" name="default" dataManager="_j4wYALLmEe-hyfK815nuZA">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_j4wYArLmEe-hyfK815nuZA" id="_N_zHsLLmEe-hyfK815nuZA" label="Contqact">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_j4wYArLmEe-hyfK815nuZA" id="_N_zHsLLmEe-hyfK815nuZA" label="Contacts">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j4wYA7LmEe-hyfK815nuZA" label="ID" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j4wYBLLmEe-hyfK815nuZA" label="Email" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j4wYBbLmEe-hyfK815nuZA" label="Country" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
