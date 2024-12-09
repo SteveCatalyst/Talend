@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_hvtE8LYUEe-hyfK815nuZA" comment="connectionComment" label="connectionLabel" dataPackage="_hvtsALYUEe-hyfK815nuZA"/>
+  <TalendMetadata:GenericPackage xmi:id="_hvtsALYUEe-hyfK815nuZA" dataManager="_hvtE8LYUEe-hyfK815nuZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hvtsAbYUEe-hyfK815nuZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsArYUEe-hyfK815nuZA" name="ORDERNUMBER" id="42991" label="ORDERNUMBER" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_hvtsA7YUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsBLYUEe-hyfK815nuZA" name="ORDERDATE" id="42992" label="ORDERDATE" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_hvtsBbYUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsBrYUEe-hyfK815nuZA" name="QUANTITY" id="42993" label="QUANTITY" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_hvtsB7YUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsCLYUEe-hyfK815nuZA" name="STOREID" id="42994" label="STOREID" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_hvtsCbYUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsCrYUEe-hyfK815nuZA" name="CUSTOMERID" id="42995" label="CUSTOMERID" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_hvtsC7YUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsDLYUEe-hyfK815nuZA" name="PRODUCTID" id="42996" label="PRODUCTID" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_hvtsDbYUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsDrYUEe-hyfK815nuZA" name="ItemPrice" id="49326" label="ItemPrice" length="-1" precision="-1" sourceType="" talendType="id_Float">
+        <initialValue xmi:id="_hvtsD7YUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsELYUEe-hyfK815nuZA" name="TotalPrice" id="49327" label="TotalPrice" length="-1" precision="-1" sourceType="" talendType="id_Float">
+        <initialValue xmi:id="_hvtsEbYUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsErYUEe-hyfK815nuZA" name="CreatedDate" id="43068" label="CreatedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_hvtsE7YUEe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hvtsFLYUEe-hyfK815nuZA" name="ModifiedDate" id="43069" label="ModifiedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_hvtsFbYUEe-hyfK815nuZA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_XHLHYLYREe-hyfK815nuZA" comment="connectionComment" label="connectionLabel" dataPackage="_XHLHYbYREe-hyfK815nuZA"/>
+  <TalendMetadata:GenericPackage xmi:id="_XHLHYbYREe-hyfK815nuZA" dataManager="_XHLHYLYREe-hyfK815nuZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XHLHYrYREe-hyfK815nuZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHLHY7YREe-hyfK815nuZA" name="ID" id="33603" label="ID" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_XHM8kLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8kbYREe-hyfK815nuZA" name="EMAIL" id="33604" label="EMAIL" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8krYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8k7YREe-hyfK815nuZA" name="COUNTRY" id="33605" label="COUNTRY" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8lLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8lbYREe-hyfK815nuZA" name="CITY" id="33606" label="CITY" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8lrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8l7YREe-hyfK815nuZA" name="POSTCODE" id="33607" label="POSTCODE" length="9" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8mLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8mbYREe-hyfK815nuZA" name="FIRSTNAME" id="33608" label="FIRSTNAME" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8mrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8m7YREe-hyfK815nuZA" name="BIRTHDATE" id="33609" label="BIRTHDATE" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_XHM8nLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8nbYREe-hyfK815nuZA" name="AQUISITION_SOURCE" id="33610" label="AQUISITION_SOURCE" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_XHM8nrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8n7YREe-hyfK815nuZA" name="CreatedDate" id="35220" label="CreatedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_XHM8oLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XHM8obYREe-hyfK815nuZA" name="ModifiedDate" id="35221" label="ModifiedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_XHM8orYREe-hyfK815nuZA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_bPJCULYREe-hyfK815nuZA" comment="connectionComment" label="connectionLabel" dataPackage="_bPJCUbYREe-hyfK815nuZA"/>
+  <TalendMetadata:GenericPackage xmi:id="_bPJCUbYREe-hyfK815nuZA" dataManager="_bPJCULYREe-hyfK815nuZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bPJCUrYREe-hyfK815nuZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCU7YREe-hyfK815nuZA" name="ID" id="26324" label="ID" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_bPJCVLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCVbYREe-hyfK815nuZA" name="ProductName" id="26325" label="ProductName" length="10000" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_bPJCVrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCV7YREe-hyfK815nuZA" name="Maufacturer" id="26326" label="Maufacturer" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_bPJCWLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCWbYREe-hyfK815nuZA" name="Price" id="26327" label="Price" length="-1" precision="-1" sourceType="" talendType="id_Float">
+        <initialValue xmi:id="_bPJCWrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCW7YREe-hyfK815nuZA" name="Category1" id="26328" label="Category1" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_bPJCXLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCXbYREe-hyfK815nuZA" name="Category2" id="26329" label="Category2" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_bPJCXrYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCX7YREe-hyfK815nuZA" name="CreatedDate" id="26330" label="CreatedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_bPJCYLYREe-hyfK815nuZA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bPJCYbYREe-hyfK815nuZA" name="ModifiedDate" id="26331" label="ModifiedDate" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_bPJCYrYREe-hyfK815nuZA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
