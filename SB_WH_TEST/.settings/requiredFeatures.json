@@ -4,6 +4,10 @@
   "requiredInstallableUnits" : [ {
     "id" : "org.talend.lite.di.bigquery.feature.feature.group"
   }, {
+    "id" : "org.talend.lite.di.jobtemplate.feature.feature.group"
+  }, {
+    "id" : "org.talend.lite.dq.feature.feature.group"
+  }, {
     "id" : "org.talend.studio.components.tcompv0.snowflakeee.feature.feature.group"
   } ]
 }
