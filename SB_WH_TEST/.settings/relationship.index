@@ -5,6 +5,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_5BqqcLLxEe-hyfK815nuZA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_7d2q8LLvEe-hyfK815nuZA",
     "version" : "Latest",
     "type" : "property"
@@ -12,6 +16,14 @@
     "id" : "_j4nOELLmEe-hyfK815nuZA",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_vSnXALJIEe-hyfK815nuZA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_5BqqcLLxEe-hyfK815nuZA - Store",
+    "version" : "Latest",
+    "type" : "schema"
   }, {
     "id" : "_7d2q8LLvEe-hyfK815nuZA - products",
     "version" : "Latest",
