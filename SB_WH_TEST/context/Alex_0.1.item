@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ntLVsLYkEe-Otqj4z_47gA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ntLVsbYkEe-Otqj4z_47gA" comment="" name="Region" prompt="Region?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=".eu-west-1"/>
+</talendfile:ContextType>
