@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_f5kL4L0pEe-qxODXVBPG2g" name="SQLExpressTest" id="_evI20Lx-Ee-qxODXVBPG2g" label="SQLExpressTest" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://crodasqlpoc.northeurope.cloudapp.azure.com\SQLExpress:1433;DatabaseName=QCDITest;" dbVersionString="MSSQL_PROP" Port="1433" Username="dbreader" Password="enc:system.encryption.key.v1:DkqNpUKH4oEb//jCkNfa+MovuE2I7U2TEC97xbhSdF0xmYGe672IgkiBktDE8McD5Q==" ServerName="crodasqlpoc.northeurope.cloudapp.azure.com\SQLExpress" DatasourceName="" FileFieldName="" SID="QCDITest" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+  <taggedValue xmi:id="_f5kL4b0pEe-qxODXVBPG2g" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_f7O_0L0pEe-qxODXVBPG2g" tag="package filter" value=""/>
+  <taggedValue xmi:id="_f7T4UL0pEe-qxODXVBPG2g" tag="Status" value=""/>
+  <taggedValue xmi:id="_f7T4Ub0pEe-qxODXVBPG2g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_f7T4Ur0pEe-qxODXVBPG2g" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_f7T4U70pEe-qxODXVBPG2g" tag="Description" value=""/>
+  <taggedValue xmi:id="_f7T4VL0pEe-qxODXVBPG2g" tag="Author" value=""/>
+  <taggedValue xmi:id="_f7T4Vb0pEe-qxODXVBPG2g" tag="otherParameter"/>
+  <parameters xmi:id="_f5kL4r0pEe-qxODXVBPG2g" key="CONN_PARA_KEY_USERNAME" value="dbreader"/>
+</TalendMetadata:DatabaseConnection>
